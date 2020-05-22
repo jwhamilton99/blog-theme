@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+	</head>
+	<body>
+		<div class="container">
+			{% assign groups = site.posts | group_by_exp: "post", "post.date | date: '%Y'"%}
+			{% for group in groups %}
+				<p class="content yearHeader">{{group.name}}</p>
+				{% assign months = group.items | group_by_exp: "post", "post.date | date: '%b'" %}
+				{% for month in months %}
+					<p class="content monthHeader">{{month.name}}</p>
+					{% for post in month.items %}
+						<div class="content indexPost">
+							<a href="{{post.url}}">{{post.title}}</a> - {{post.date | date_to_string}}
+							<br>
+						</div>
+					{% endfor %}
+				{% endfor %}
+				<br>
+			{% endfor %}
+			<p class="content"><a href="https://blog.jwhamilton.co">(Back)</a></p>
+		</div>
+	</body>
+</html>

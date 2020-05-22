@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+		<title>Blog - Justin Hamilton</title>
+	</head>
+	<body>
+		<div class="container">
+			<p class="content"><a href="/posts.html">(All Posts)</a> <a href="https://medium.com/@jwhamilton99">(Medium)</a></p>
+			<div id="posts">
+				{% assign posts = site.posts | limit:10 %}
+				{% assign i = 0 %}
+				{% for post in posts %}
+					<div class="post content">
+						<a href="{{post.url}}">{{post.title}}</a>
+						<div class="postContent">{{post.content | remove: "<p>" | remove: "</p>"}}</div>
+					</div>
+				{% endfor %}
+			</div>
+			<p class="content"><a href="https://www.jwhamilton.co">(Back)</a></p>
+		</div>
+	</body>
+</html>

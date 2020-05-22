@@ -1,0 +1,73 @@
+body {
+	background-color: #1a1a1a;
+}
+
+.container {
+	max-width:1250px;
+}
+
+a {
+	color: #3bffff;
+	background-color:clear;
+	text-shadow:none;
+	text-decoration:none;
+}
+
+@supports (-webkit-background-clip:text) and (animation-name: MoveGradient) {
+	.container {
+		background-image: linear-gradient(to bottom left, #3bffff,#6dffa2,#3bffff,#6dffa2,#3bffff);
+		background-size: 200%,100%;
+		background-repeat: repeat-x;
+		background-clip:text;
+		-webkit-background-clip: text;
+
+		animation-name: MoveGradient;
+		animation-duration: 45s;
+		animation-timing-function: ease;
+		animation-iteration-count: infinite;
+		max-width:1250px;
+	}
+
+	@keyframes MoveGradient {
+		0%	{background-position: 0%,0%;}
+		50%	{background-position: 400%,800%;}
+		100%	{background-position: 0%,0%;}
+	}
+	
+	a {
+		color: transparent;
+		text-decoration: none;
+		background-color:clear;
+		text-shadow:none;
+	}
+}
+
+.content {
+	margin-left:20px;
+	margin-top:20px;
+	margin-right:20px;
+	margin-bottom:20px;
+	font-family: Arial, helvetica, sans-serif;
+	color: #e6e6e6;
+	color:clear;
+	font-size: 60px;
+}
+
+a:hover {
+	color:#ff6666;
+	background-color: #1a1a1a;
+	text-decoration: underline;
+}
+
+.postContent {
+	font-size:50px;
+}
+
+#date {
+	font-size:50px;
+	margin-top:-10px;
+}
+
+.monthHeader, .indexPost {
+	font-size:50px;
+}
