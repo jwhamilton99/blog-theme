@@ -5,9 +5,9 @@
 	</head>
 	<body>
 		<div class="container">
-			<p class="content"><a href="/posts.html">(All Posts)</a> <a href="https://medium.com/@jwhamilton99">(Medium)</a></p>
+			<p class="content"><a href="/posts.html">(All Posts)</a> <a href="https://medium.com/@jwhamilton99">(Medium)</a> <a href="/feed.xml">(RSS)</a></p>
 			<div id="posts">
-				{% assign posts = site.posts | limit:10 %}
+				{% assign posts = site.posts | sorted_by_exp: "post", "post.date" | limit:10 %}
 				{% assign i = 0 %}
 				{% for post in posts %}
 					<div class="post content">
