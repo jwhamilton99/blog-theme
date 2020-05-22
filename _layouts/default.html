@@ -12,7 +12,7 @@
 				{% for post in posts %}
 					<div class="post content">
 						<a href="{{post.url}}">{{post.title}}</a>
-						<div class="postContent">{{post.content | remove: "<p>" | remove: "</p>"}}</div>
+						<div class="postContent">{{post.content}}</div>
 					</div>
 				{% endfor %}
 			</div>

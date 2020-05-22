@@ -6,7 +6,7 @@
 	<body>
 		<div class="container">
 			<p class="content">{{page.title}}</p>
-			<div class="content postContent">{{page.content | remove:"<p>" | remove:"</p>"}}</div>
+			<div class="content postContent">{{page.content}}</div>
 			<p class="content" id="date">Posted {{page.date | date_to_string}}</p>
 			<p class="content"><a href="https://blog.jwhamilton.co">(Back)</a></p>
 		</div>
