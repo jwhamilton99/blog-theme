@@ -1,29 +1,42 @@
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="https://www.jwhamilton.co/style/style.css" />
 		<link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
-		<script type="text/javascript" src="https://www.jwhamilton.co/scripts/pride.js"></script>
-		<title>Post Index - Justin Hamilton</title>
+		<title>Archive - Justin Hamilton</title>
 	</head>
 	<body>
-		<div class="container">
-			{% assign groups = site.posts | sorted_by_exp: "post", "post.date" | group_by_exp: "post", "post.date | date: '%Y'"%}
-			{% for group in groups %}
-				<p class="content yearHeader">{{group.name}}</p>
-				{% assign months = group.items | sorted_by_exp: "post", "post.date" | group_by_exp: "post", "post.date | date: '%b'" %}
-				{% for month in months %}
-					<p class="content monthHeader">{{month.name}}</p>
-					{% assign monthItems = month.items | sorted_by_exp: "post", "post.date" %}
-					{% for post in monthItems %}
-						<div class="content indexPost">
-							<a href="{{post.url}}">{{post.title}}</a> - {{post.date | date_to_string}}
-							<br>
-						</div>
+		<div id="container">
+			<div id="header">
+				<div id="headerColumnLeft">
+					<a id="titleLink" href="https://www.jwhamilton.co"><h1 id="title">Justin Hamilton</h1></a>
+				</div>
+			</div>
+			<div id="columnContainer">
+				<div id="columnLeft">
+					<h2 class="sectionTitle sidebarLink"><a href="/.co">All Posts</a></h2>
+					<h2 class="sectionTitle sidebarLink"><a href="/posts">Archive</a></h2>
+					<h2 class="sectionTitle sidebarLink"><a href="https://medium.com/@jwhamilton99">Medium</a></h2>
+					<h2 class="sectionTitle sidebarLink"><a href="/feed.xml">RSS</a></h2>
+					<h2 class="sectionTitle sidebarLink"><a href="/">Back</a></h2>
+				</div>
+				<div id="columnRight">
+					{% assign groups = site.posts | sorted_by_exp: "post", "post.date" | group_by_exp: "post", "post.date | date: '%Y'"%}
+					{% for group in groups %}
+						<h2 class="content yearHeader sectionTitle">{{group.name}}</h2>
+						{% assign months = group.items | sorted_by_exp: "post", "post.date" | group_by_exp: "post", "post.date | date: '%b'" %}
+						{% for month in months %}
+							<p class="content monthHeader sectionItemTitle">{{month.name}}</p>
+							{% assign monthItems = month.items | sorted_by_exp: "post", "post.date" %}
+							{% for post in monthItems %}
+								<div class="content indexPost sectionItemDescription">
+									<a href="{{post.url}}">{{post.title}}</a> - {{post.date | date_to_string}}
+									<br>
+								</div>
+							{% endfor %}
+						{% endfor %}
+						<br>
 					{% endfor %}
-				{% endfor %}
-				<br>
-			{% endfor %}
-			<p class="content"><a href="https://blog.jwhamilton.co">(Back)</a></p>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
