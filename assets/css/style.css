@@ -1,3 +1,32 @@
+@font-face {
+	font-family: 'iA Writer Mono';
+	src: 	url(fonts/iAWriterMonoS-Regular.woff) format('woff'),
+			url(fonts/iAWriterMonoS-Regular.woff2) format('woff2'),
+			url(fonts/iAWriterMonoS-Regular.eot) format('eot'),
+			url(fonts/iAWriterMonoS-Regular.ttf) format('ttf');
+	font-display: optional;
+}
+
+@font-face {
+	font-family: 'iA Writer Mono';
+	src: 	url(fonts/iAWriterMonoS-Bold.woff) format('woff'),
+			url(fonts/iAWriterMonoS-Bold.woff2) format('woff2'),
+			url(fonts/iAWriterMonoS-Bold.eot) format('eot'),
+			url(fonts/iAWriterMonoS-Bold.ttf) format('ttf');
+	font-weight:bold;
+	font-display: fallback;
+}
+
+@font-face {
+	font-family: 'iA Writer Mono';
+	src: 	url(fonts/iAWriterMonoS-Italic.woff) format('woff'),
+			url(fonts/iAWriterMonoS-Italic.woff2) format('woff2'),
+			url(fonts/iAWriterMonoS-Italic.eot) format('eot'),
+			url(fonts/iAWriterMonoS-Italic.ttf) format('ttf');
+	font-style:italic;
+	font-display: optional;
+}
+
 body {
 	background-color: var(--background-color);
 	margin:0;
@@ -5,7 +34,7 @@ body {
 	align-items:center;
 	justify-content:center;
 	color: var(--text-color);
-	font-family: "courier", monospace;
+	font-family: "iA Writer Mono", "Courier New", monospace;
 	font-weight:500;
 	
 	--background-color: #323232;
@@ -38,7 +67,6 @@ a:hover {
 #title {
 	font-weight:bold;
 	margin-bottom:0px;
-	font-family: "courier new", monospace;
 	text-align:right;
 }
 
@@ -60,7 +88,7 @@ a:hover {
 
 #headerColumnLeft {
 	/* background-color:orange; */
-	width:300px;
+	width:350px;
 	margin-right:15px;
 	display:flex;
 	align-items:flex-end;
@@ -78,7 +106,7 @@ a:hover {
 
 #columnLeft {
 	/* background-color:orange; */
-	width:300px;
+	width:350px;
 	flex-shrink:0;
 	text-align:right;
 	margin-right:15px;
@@ -129,7 +157,6 @@ a:hover {
 	margin-bottom:5px;
 	/* background-color:turquoise; */
 	font-weight:bold;
-	font-family: "courier new", monospace;
 }
 
 .firstSectionTitle {
@@ -150,7 +177,6 @@ a:hover {
 .sectionItemTitle {
 	font-weight:700;
 	margin-bottom:8px;
-	font-family: "courier new", monospace;
 }
 
 .sectionItemTitleLink {
