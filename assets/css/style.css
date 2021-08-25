@@ -1,28 +1,28 @@
 @font-face {
 	font-family: 'iA Writer Mono';
-	src: 	url(fonts/iAWriterMonoS-Regular.woff) format('woff'),
-			url(fonts/iAWriterMonoS-Regular.woff2) format('woff2'),
-			url(fonts/iAWriterMonoS-Regular.eot) format('eot'),
-			url(fonts/iAWriterMonoS-Regular.ttf) format('ttf');
+	src: 	url(/assets/fonts/iAWriterMonoS-Regular.woff) format('woff'),
+			url(/assets/fonts/iAWriterMonoS-Regular.woff2) format('woff2'),
+			url(/assets/fonts/iAWriterMonoS-Regular.eot) format('eot'),
+			url(/assets/fonts/iAWriterMonoS-Regular.ttf) format('ttf');
 	font-display: optional;
 }
 
 @font-face {
 	font-family: 'iA Writer Mono';
-	src: 	url(fonts/iAWriterMonoS-Bold.woff) format('woff'),
-			url(fonts/iAWriterMonoS-Bold.woff2) format('woff2'),
-			url(fonts/iAWriterMonoS-Bold.eot) format('eot'),
-			url(fonts/iAWriterMonoS-Bold.ttf) format('ttf');
+	src: 	url(/assets/fonts/iAWriterMonoS-Bold.woff) format('woff'),
+			url(/assets/fonts/iAWriterMonoS-Bold.woff2) format('woff2'),
+			url(/assets/fonts/iAWriterMonoS-Bold.eot) format('eot'),
+			url(/assets/fonts/iAWriterMonoS-Bold.ttf) format('ttf');
 	font-weight:bold;
 	font-display: fallback;
 }
 
 @font-face {
 	font-family: 'iA Writer Mono';
-	src: 	url(fonts/iAWriterMonoS-Italic.woff) format('woff'),
-			url(fonts/iAWriterMonoS-Italic.woff2) format('woff2'),
-			url(fonts/iAWriterMonoS-Italic.eot) format('eot'),
-			url(fonts/iAWriterMonoS-Italic.ttf) format('ttf');
+	src: 	url(/assets/fonts/iAWriterMonoS-Italic.woff) format('woff'),
+			url(/assets/fonts/iAWriterMonoS-Italic.woff2) format('woff2'),
+			url(/assets/fonts/iAWriterMonoS-Italic.eot) format('eot'),
+			url(/assets/fonts/iAWriterMonoS-Italic.ttf) format('ttf');
 	font-style:italic;
 	font-display: optional;
 }
@@ -36,6 +36,7 @@ body {
 	color: var(--text-color);
 	font-family: "iA Writer Mono", "Courier New", monospace;
 	font-weight:500;
+	font-size:1.1em;
 	
 	--background-color: #323232;
 	--text-color: #fffff7;
