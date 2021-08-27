@@ -4,7 +4,7 @@
 			url(/assets/fonts/iAWriterMonoS-Regular.woff2) format('woff2'),
 			url(/assets/fonts/iAWriterMonoS-Regular.eot) format('eot'),
 			url(/assets/fonts/iAWriterMonoS-Regular.ttf) format('ttf');
-	font-display: optional;
+	font-display: fallback;
 }
 
 @font-face {
@@ -24,7 +24,7 @@
 			url(/assets/fonts/iAWriterMonoS-Italic.eot) format('eot'),
 			url(/assets/fonts/iAWriterMonoS-Italic.ttf) format('ttf');
 	font-style:italic;
-	font-display: optional;
+	font-display: fallback;
 }
 
 body {

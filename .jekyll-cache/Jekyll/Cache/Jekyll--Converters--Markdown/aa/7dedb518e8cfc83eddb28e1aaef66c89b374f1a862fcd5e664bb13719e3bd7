@@ -1,32 +1,4 @@
-<html>
-	<head>
-		<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
-		<link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png"/>
-		<title>Blog - Justin Hamilton</title>
-	</head>
-	<body>
-		<div id="container">
-			<div id="header">
-				<div id="headerColumnLeft">
-					<h1 id="title"><a id="titleLink" href="https://www.jwhamilton.co">Justin Hamilton</a></h1>
-				</div>
-			</div>
-			<div id="columnContainer">
-				<div id="columnLeft">
-					<h2 class="sectionTitle sidebarLink"><a href="/">Recent Posts</a></h2>
-					<h2 class="sectionTitle sidebarLink"><a href="/posts">Archive</a></h2>
-					<h2 class="sectionTitle sidebarLink"><a href="https://medium.com/@jwhamilton99">Medium</a></h2>
-					<h2 class="sectionTitle sidebarLink"><a href="/feed.xml">RSS</a></h2>
-					<h2 class="sectionTitle sidebarLink"><a href="https://www.jwhamilton.co">Back</a></h2>
-				</div>
-				<div id="columnRight">
-					
-					
-					
-						<div class="post">
-							<h2 class="sectionTitle"><a href="/2021/08/27/a-new-design.html">A New Design</a></h2>
-							<p class="sectionItemLink">Posted 27 Aug 2021</p>
-							<div class="postContent"><p>Hi, I redesigned my site a few weeks ago. I’m only writing about it now, because I just added a pretty big thing: iA Writer Mono.</p>
+I"&<p>Hi, I redesigned my site a few weeks ago. I’m only writing about it now, because I just added a pretty big thing: iA Writer Mono.</p>
 
 <p><strong>The Font</strong></p>
 
@@ -63,11 +35,4 @@
 <p>I’m super happy with how this redesign came out. I’ve wanted to do something like this for a while, and I’m so glad I went through with it. It’s more concise, clean, and pretty. And most importantly, there’s still no JavaScript to weigh the site down. Thanks to everyone in the <a href="https://www.relay.fm/membership">Relay FM Members’ Discord Server</a> who gave feedback and suggestions for the layout.</p>
 
 <p>Enjoy.</p>
-</div>
-						</div>
-					
-				</div>
-			</div>
-		</div>
-	</body>
-</html>
+:ET

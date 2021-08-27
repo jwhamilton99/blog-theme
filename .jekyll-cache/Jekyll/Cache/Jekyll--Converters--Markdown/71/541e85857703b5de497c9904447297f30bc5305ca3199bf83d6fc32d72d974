@@ -1,40 +1,12 @@
-<html>
-	<head>
-		<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
-		<link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png"/>
-		<title>Blog - Justin Hamilton</title>
-	</head>
-	<body>
-		<div id="container">
-			<div id="header">
-				<div id="headerColumnLeft">
-					<h1 id="title"><a id="titleLink" href="https://www.jwhamilton.co">Justin Hamilton</a></h1>
-				</div>
-			</div>
-			<div id="columnContainer">
-				<div id="columnLeft">
-					<h2 class="sectionTitle sidebarLink"><a href="/">Recent Posts</a></h2>
-					<h2 class="sectionTitle sidebarLink"><a href="/posts">Archive</a></h2>
-					<h2 class="sectionTitle sidebarLink"><a href="https://medium.com/@jwhamilton99">Medium</a></h2>
-					<h2 class="sectionTitle sidebarLink"><a href="/feed.xml">RSS</a></h2>
-					<h2 class="sectionTitle sidebarLink"><a href="https://www.jwhamilton.co">Back</a></h2>
-				</div>
-				<div id="columnRight">
-					
-					
-					
-						<div class="post">
-							<h2 class="sectionTitle"><a href="/2021/08/27/a-new-design.html">A New Design</a></h2>
-							<p class="sectionItemLink">Posted 27 Aug 2021</p>
-							<div class="postContent"><p>Hi, I redesigned my site a few weeks ago. I’m only writing about it now, because I just added a pretty big thing: iA Writer Mono.</p>
+I"�<p>Hi, I redesigned my site a few weeks ago. I’m only writing about it now, because I just added a pretty big thing: iA Writer Mono.</p>
 
-<p><strong>The Font</strong></p>
+<h2 id="the-font">The Font</h2>
 
 <p>I didn’t like how Courier looked after a while, so I wanted a cleaner and prettier monospace font. I started with JetBrains Mono, but something didn’t sit right for me. Then I experimented with San Francisco Mono, the font used in Xcode, and decided against it for fear the wrath of Apple’s legal team. I then was reminded of <a href="https://github.com/iaolo/iA-Fonts">iA Writer’s custom-made fonts</a> that the wonderful folks at iA are letting anyone use.</p>
 
 <p>So I snagged them, loaded the Mono variant into my CSS, and it looks beautiful. I love it. OK, font and all, I need to talk about this new design.</p>
 
-<p><strong>The Design</strong></p>
+<h2 id="the-design">The Design</h2>
 
 <p>My old design was getting stale and convoluted. I wanted to keep the aesthetic of the old design, in a way, but wanted a nice refresh that presented only the information needed in a nice way. A few years ago, I designed my resume with a monospaced font, double-column layout, and a concise way to see my experience on one page. So I took inspiration from that, and out came this design.</p>
 
@@ -48,26 +20,9 @@
 
 <p>I also whipped up a quick favicon. It’s my initials in iA Writer Mono on a squircle with the same text and background colors as the site. It helps complete the look and makes the design look finished.</p>
 
-<p><strong>The Blog</strong></p>
+<h2 id="the-blog">The Blog</h2>
 
 <p>There isn’t too much here. In the recent posts page, I turn the projects list into the posts list. Clicking my name also brings you back to the main site. In the archive, the right column turns into a posts list organized by year and month, same as before. The left column is navigation.</p>
 
-<p><strong>The Mobile Layout</strong></p>
-
-<p>I never really used proportional text sizes before, so adapting this layout to work on mobile was a little tricky to get working. I found a good proportion of the viewport width to use for the text size, adjusted a few margins and stuff, and adapted the layout’s flexbox to be vertical instead of horizontal.</p>
-
-<p>On the main site, having the About section and contact info on the bottom seems most logical. On the blog, I keep the navigation on the top and wrap the options if the screen is too thin. I think that’s a good compromise for a functional mobile layout, done only in pure CSS.</p>
-
-<p><strong>In Conclusion</strong></p>
-
-<p>I’m super happy with how this redesign came out. I’ve wanted to do something like this for a while, and I’m so glad I went through with it. It’s more concise, clean, and pretty. And most importantly, there’s still no JavaScript to weigh the site down. Thanks to everyone in the <a href="https://www.relay.fm/membership">Relay FM Members’ Discord Server</a> who gave feedback and suggestions for the layout.</p>
-
-<p>Enjoy.</p>
-</div>
-						</div>
-					
-				</div>
-			</div>
-		</div>
-	</body>
-</html>
+<p>I’m super happy with how this redesign came out. I’ve wanted to do something like this for a while, and I’m so glad I went through with it. It’s more concise, clean, and pretty. Enjoy.</p>
+:ET
