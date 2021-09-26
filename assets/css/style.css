@@ -43,6 +43,7 @@ body {
 	--link-color: #85d3dc;
 	--link-hover-color: #d55b71;
 	--secondary-text-color: #dbdad4;
+	--secondary-text-color-light: #6a6a6a;
 }
 
 a {
@@ -226,6 +227,47 @@ a:hover {
 #content404 {
 	/* max-width:1000px; */
 	margin:20px;
+}
+
+@media screen and (prefers-color-scheme:light) {
+	body {
+		background-color:var(--text-color);
+		color:var(--background-color);
+	}
+	
+	#titleLink {
+		color:var(--background-color);
+	}
+	
+	a {
+		color:var(--link-hover-color);
+	}
+	
+	a:hover {
+		color:var(--link-color);
+	}
+	
+	.postContent {
+		color:var(--secondary-text-color-light);
+	}
+	
+	.sectionItemTitleLink {
+		text-decoration:none;
+		color: var(--background-color);
+	}
+	
+	.sectionItemTitleLink:hover {
+		text-decoration:none;
+		color: var(--link-color);
+	}
+	
+	.aboutItem {
+		color:var(--secondary-text-color-light);
+	}
+	
+	.sectionItemDescription {
+		color:var(--secondary-text-color-light);
+	}
 }
 
 @media screen and (orientation:portrait) {
