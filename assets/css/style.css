@@ -252,6 +252,16 @@ hr {
 		color:var(--background-color);
 	}
 	
+	
+	img {
+		width:90%;
+		margin-left:5%;
+	}
+	
+	hr {
+		width:90%;
+	}
+	
 	h1, h2, h3, h4 {
 		color: var(--background-color);
 	}
