@@ -66,14 +66,19 @@ a:hover {
 #container {
 	margin:10px;
 	height:100%;
-	/* background-color:red; */
 	max-width:1000px;
 }
 
-#title {
+#title, #collapseButton {
 	font-weight:bold;
 	margin-bottom:0px;
 	text-align:right;
+	cursor:pointer;
+	user-select:none;
+}
+
+#collapseButtonInner {
+	text-decoration: none;
 }
 
 #titleLink {
@@ -93,7 +98,6 @@ a:hover {
 }
 
 #headerColumnLeft {
-	/* background-color:orange; */
 	width:350px;
 	margin-right:15px;
 	display:flex;
@@ -103,6 +107,10 @@ a:hover {
 
 #headerColumnRight {
 	margin-left:15px;
+	display:flex;
+	align-items:flex-end;
+	justify-content:flex-start;
+	flex-grow:1;
 }
 
 #columnContainer {
@@ -123,7 +131,6 @@ a:hover {
 }
 
 #columnRight {
-	/* background-color:green; */
 	flex-grow:1;
 	text-align:left;
 	margin-left:15px;
@@ -324,6 +331,7 @@ hr {
 		text-align:left;
 		flex-direction:row;
 		flex-wrap:wrap;
+		align-items:flex-start;
 		margin-bottom:25px;
 	}
 	
@@ -334,6 +342,7 @@ hr {
 	
 	.sidebarLink:last-child {
 		margin-right:0px;
+		margin-top:5px;
 	}
 	
 	#columnRight {
@@ -348,6 +357,10 @@ hr {
 	#headerColumnLeft {
 		justify-content:left;
 		width:100%;
+	}
+	
+	#headerColumnRight {
+		display:none;
 	}
 	
 	#title {
