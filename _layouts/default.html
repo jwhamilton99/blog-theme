@@ -34,6 +34,9 @@
 							<p class="sectionItemLink">Posted {{post.date | date_to_string}}</p>
 							<div class="postContent">{{post.content}}</div>
 						</div>
+						{% if post != posts.last %}
+							<hr>
+						{% endif %}
 					{% endfor %}
 				</div>
 			</div>

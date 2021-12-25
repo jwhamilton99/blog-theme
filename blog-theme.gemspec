@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "blog-theme"
-  spec.version       = "0.5"
+  spec.version       = "0.6"
   spec.authors       = ["Justin Hamilton"]
   spec.email         = ["jwhamilton99@gmail.com"]
 

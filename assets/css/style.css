@@ -46,7 +46,7 @@ body {
 	--secondary-text-color-light: #6a6a6a;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, strong, code {
 	color: var(--text-color);
 }
 
@@ -253,13 +253,44 @@ hr {
 	margin-bottom:50px;
 }
 
+div.highlight {
+	padding: 10px 0px 10px 0px;
+	width:75%;
+	margin-left:12.5%;
+	box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.31);
+	border-radius:20px;
+	background-color:var(--secondary-text-color);
+}
+
+pre.highlight {
+	margin:0px 10px 0px 10px;
+	text-align:center;
+}
+
+code {
+	font-size:1.1em;
+	line-height:200%;
+	font-style: italic;
+	color:var(--background-color);
+	font-weight:bold;
+	white-space:pre-wrap;
+}
+
+ol{
+	list-style: number inside;
+}
+
+ul {
+	list-style: inside;
+}
+
 @media screen and (prefers-color-scheme:light) {
 	body {
 		background-color:var(--text-color);
 		color:var(--background-color);
 	}
 	
-	h1, h2, h3, h4 {
+	h1, h2, h3, h4, strong {
 		color: var(--background-color);
 	}
 	
@@ -296,6 +327,14 @@ hr {
 	.sectionItemDescription {
 		color:var(--secondary-text-color-light);
 	}
+	
+	div.highlight {
+		background-color: var(--background-color);
+	}
+	
+	code {
+		color: var(--text-color);
+	}
 }
 
 @media screen and (orientation:portrait) {
@@ -310,6 +349,10 @@ hr {
 	
 	hr {
 		width:90%;
+	}
+	
+	code {
+		font-size:unset;
 	}
 	
 	#container {
@@ -371,5 +414,16 @@ hr {
 	
 	img {
 		border-radius:4vw;
+	}
+	
+	div.highlight {
+		width:100%;
+		margin-left:0px;
+		padding: 1em 0px 1em 0px;
+		border-radius:4vw;
+	}
+	
+	pre.highlight {
+		margin: 0px 1em 0px 1em;
 	}
 }
