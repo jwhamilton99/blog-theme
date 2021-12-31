@@ -298,6 +298,10 @@ ul {
 		color:var(--background-color);
 	}
 	
+	#titleLink:hover {
+		color:var(--link-color);
+	}
+	
 	a {
 		color:var(--link-hover-color);
 	}

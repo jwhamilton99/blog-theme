@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    blog-theme (0.5)
+    blog-theme (0.6)
       jekyll (~> 4.0)
 
 GEM
