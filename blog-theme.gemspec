@@ -2,11 +2,11 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "blog-theme"
-  spec.version       = "0.7.3"
+  spec.version       = "0.7.4"
   spec.authors       = ["Justin Hamilton"]
   spec.email         = ["jwhamilton99@gmail.com"]
 
-  spec.summary       = "my blog theme"
+  spec.summary       = "my blog theme "
   spec.homepage      = "https://www.jwhamilton.co"
   spec.license       = "MIT"
 
