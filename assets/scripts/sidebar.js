@@ -10,6 +10,19 @@ function toggleSidebar() {
 	}
 }
 
+window.onload = function() {
+	let collapsed = window.localStorage.getItem("sidebarHidden");
+	
+	console.log(collapsed);
+	
+	if(collapsed == null) { return }
+	
+	if(collapsed == 1) {
+		collapseSidebar(false);
+		sidebar = false;
+	}
+}
+
 function collapseSidebar(withAnimation = true) {
 	let headerLeft = document.getElementById("headerColumnLeft");
 	let left = document.getElementById("columnLeft");
@@ -29,11 +42,13 @@ function collapseSidebar(withAnimation = true) {
 	button.innerHTML = ">";
 	headerLeft.style.width = document.getElementById("title").clientWidth+"px";
 	
+	
 	if(withAnimation) {
 		setTimeout(function() {
 			left.style.transition = "none";
 			right.style.transition = "none";
 			headerLeft.style.transition = "none";
+			window.localStorage.setItem("sidebarHidden", 1);
 		}, animationDuration);
 	}
 }
@@ -57,11 +72,13 @@ function showSidebar(withAnimation = true, width = "350px", margin = "15px") {
 	left.style.opacity = 1;
 	button.innerHTML = "<";
 	
+	
 	if(withAnimation) {
 		setTimeout(function() {
 			left.style.transition = "none";
 			right.style.transition = "none";
 			headerLeft.style.transition = "none";
+			window.localStorage.setItem("sidebarHidden", 0);
 		}, animationDuration);
 	}
 }
